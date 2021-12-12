@@ -1,0 +1,90 @@
+* {
+    background-color:  transparent ;
+    background: #1d2021;
+    border-color:  #70b4ba ;
+    
+    text: #D8DEE9;
+    separator-color: @border-color;
+    font: "Fira Code 12";
+    show-icons: true;
+    
+    aa: #70b4ba;
+    ab:  #1d2021;
+    
+}
+
+window {
+    border: 3px;
+    padding: 5px;
+    height: 300px;
+    background-color: @background;
+    text-color: #FFF;
+}
+
+mainbox {
+    padding: 5px;
+}
+
+inputbar {
+    border: 1px;
+    children: [prompt,entry];
+}
+
+prompt {
+    background-color: @border-color;
+    padding: 5px 5px 0px;
+    text-color: @background;
+}
+
+// Not used
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
+}
+
+entry {
+    padding: 5px;
+}
+
+listview {
+    border: 0px 0px 0px;
+    padding: 6px 0px 0px;
+    columns: 2;
+
+}
+
+element {
+    padding: 5px;
+}
+
+element-icon {
+}
+
+element selected {
+    background-color: @aa;
+    text-color:       @ab;
+}
+element urgent {
+    background-color: #BF616A;
+    text-color: @background;
+}
+
+element active {
+    background-color: #70b4ba;
+    text-color: @background;
+}
+
+inputbar {
+    color: #FFF;
+}
+entry {
+    text-color:        @text;
+}
+
+element-text {
+	color: @text;
+}
+
+element-text.selected {
+	color: @ab;
+}

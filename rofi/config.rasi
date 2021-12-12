@@ -1,0 +1,19 @@
+configuration{
+    modi: "drun,window";
+    width: 40;
+    columns: 1;
+    lines: 5;
+ 	font: "Iosevka 12";
+    show-icons: false;
+	icon-theme: "Papirus-Dark";
+    terminal: "$HOME/.config/rofi/sofalac.sh";
+    drun-display-format: "{icon} {name}";
+    display-drun: "run";
+    display-window: "Windows";
+    location: 0;
+    separator-style: "solid";
+    disable-history: true;
+    hide-scrollbar: true;
+}
+
+@theme "~/.config/rofi/simple.rasi"

@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+
+question=$(echo " logout| reboot| shutdown|缾 restart-bspwm|缾 quit-bspwm|wm options" | rofi -sep "|" \
+    -dmenu -i -p 'System' "" -width 20 -hide-scrollbar -config ~/.config/rofi/themes/pi.rasi\
+    -hover-select -me-select-entry '' -me-accept-entry MousePrimary)
+
+desel () {
+    polybar-msg hook power 1
+}
+
+confirm () {
+    response=$(echo "yes|no" | rofi -sep "|" -config ~/.config/rofi/themes/pi.rasi -dmenu -i -p $1 "do you wanna reboot" --hide-scrollbar)
+    case $response in
+    	*yes)
+    	    if [$1 = "Reboot"]
+    	    then
+		desel
+    	        systemctl reboot
+    	    else
+		desel
+    	        systemctl poweroff
+    	    fi
+    	     ;;
+    	 *)
+    	 desel
+    	     ;;
+    esac
+}
+
+case $question in
+    *logout)
+	desel
+        loginctl terminate-session `loginctl session-status | head -n 1 | awk '{print $1}'`
+        ;;
+    *reboot)
+		desel
+        #systemctl reboot
+        confirm "Reboot"
+        ;;
+    *restart-bspwm)
+		desel
+        bspc wm -r
+        ;;
+    *quit-bspwm)
+		desel
+        bspc quit
+        ;;
+    *shutdown)
+		desel
+        confirm "Power Off"
+        ;;
+    *)
+        desel && exit 0  # do nothing on wrong response
+        ;;
+esac

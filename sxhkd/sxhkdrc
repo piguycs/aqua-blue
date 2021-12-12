@@ -1,0 +1,53 @@
+super + Return
+	LIBGL_ALWAYS_SOFTWARE=1 alacritty
+
+super + d
+	rofi -show drun
+
+super + {_,shift +}w
+	bspc node -{c,k}
+
+super + shift + r
+	pkill -USR1 -x sxhkd
+
+super + alt + {q,r}
+	bspc {quit,wm -r}
+
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+super + alt + {Left,Down,Up,Right}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+super + alt + shift + {Left,Down,Up,Right}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+super + ctrl + @space
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+super + shift + p : {Left,Down,Up,Right,@space}
+	bspc node -p {west,south,north,east,cancel}
+
+super + p ; {Left,Down,Up,Right,@space}
+	bspc node -p {west,south,north,east,cancel}
+
+super + r : {Left, Down, Up, Right}
+	bspc node -z {	left -20 0 || bspc node -z right -20 0, \
+			bottom 0 20 || bspc node -z top 0 20,\
+			top 0 -20 || bspc node -z bottom 0 -20,\
+			right 20 0 || bspc node -z left 20 0}
+
+super + ctrl + p
+	bash ~/.config/polybar/scripts/pi-rofi-power
+
+super + l
+	betterlockscreen -l dimblur
+
+{shift + ,_} Print
+	{flameshot gui, flameshot screen -c}
