@@ -22,12 +22,12 @@ Unimatrix
 
 ### Why no transparency for terminal
 In a VM and I want to maxamise performance.
-I use ibhagwan's picom fork and the dual kawase blur looks good if performance is not a priority for you and you can try that. For me I dont care either ways, its easier to read text without transparency and vm runs smoother
+I use ibhagwan's picom fork and the dual kawase blur looks good. If performance is not a priority, you can try that. For me I dont care either ways, its easier to read text without transparency and vm runs smoother
 
 ### What is the weird script in polybar folder
 super+ctr+p - opens a power menu. Old script and I dont use it but I used it for making a power button in polybar. I thought it would look good but it dod not so I scrapped it
 
-### \_\_\_\_\_ is bloat, why not use \_\_\_\_\_
+### ummm \_\_\_\_\_ is bloat, why not use \_\_\_\_\_
 simply because this works for me, although I am trying out everything I can find (WM, Terminals etc)
 
 ### Why VM?
