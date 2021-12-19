@@ -10,7 +10,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 dunst &
 picom &
-feh --bg-fill Documents/wallpaper.jpg &
+feh --bg-fill $HOME/.config/bspwm/wallpaper.jpg &
 flameshot &
 pulseaudio --start 
 $HOME/.config/polybar/launch.sh &
