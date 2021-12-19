@@ -21,7 +21,7 @@ coming soon (after I finish all the final touches)
 Unimatrix
 
 ### Why no transparency for terminal
-In a VM and I want to maxamise performance
+In a VM and I want to maxamise performance.
 I use ibhagwan's picom fork and the dual kawase blur looks good if performance is not a priority for you and you can try that. For me I dont care either ways, its easier to read text without transparency and vm runs smoother
 
 ### What is the weird script in polybar folder
