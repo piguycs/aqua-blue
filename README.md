@@ -2,9 +2,13 @@
 
 mostly wip
 
-WM - BSPWM
-Bar/panel - Polybar
-Terminal - Alacritty
+WM - BSPWM<br>
+Bar/panel - Polybar<br>
+Terminal - Alacritty<br>
+
+### Inspiration
+I started with many dotfiles I found online and then modified them to a point where they are now indistinguishable from what I downloaded. <br>
+I also took some inspiration from Mental Outlaw, as in the status indicators are hugely inspired from his config of slstatus (I did not use slstatus) and my PS1 prompt is a blatant copy of his, although I did modify the it a bit for the root user
 
 # Screenshots
 ![ss1](https://github.com/RocKing1001/aqua-blue/blob/main/screenshots/ss1.png?raw=true)
