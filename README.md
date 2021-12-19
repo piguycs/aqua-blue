@@ -7,7 +7,10 @@ Bar/panel - Polybar
 Terminal - Alacritty
 
 # Screenshots
-will upload later
+![ss1](https://github.com/RocKing1001/aqua-blue/blob/main/screenshots/ss1.png?raw=true)
+![ss2](https://github.com/RocKing1001/aqua-blue/blob/main/screenshots/ss2-rofi.png?raw=true)
+![ss3](https://github.com/RocKing1001/aqua-blue/blob/main/screenshots/ss3-neofetch-floating.png?raw=true)
+![ss3](https://github.com/RocKing1001/aqua-blue/blob/main/screenshots/ss-4-chaos.png?raw=true)
 
 # Guide to install
 coming soon (after I finish all the final touches)
